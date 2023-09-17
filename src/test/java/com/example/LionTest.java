@@ -50,7 +50,7 @@ public class LionTest {
         try {
             new Lion("Error", new Feline());
         } catch (Exception e) {
-            assertEquals("Используйте допустимые значения пола животного - самей или самка", e.getMessage());
+            assertEquals("Используйте допустимые значения пола животного - самец или самка", e.getMessage());
         }
     }
 }
