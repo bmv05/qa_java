@@ -47,6 +47,15 @@ public class LionTest {
             throw new RuntimeException(e);
         }
     }
+
+    @Test
+    public void constructorCatchException() {
+        try {
+            new Lion("Error", new Feline());
+        } catch (Exception e) {
+            assertEquals("Используйте допустимые значения пола животного - самей или самка", e.getMessage());
+        }
+    }
 }
 
 
