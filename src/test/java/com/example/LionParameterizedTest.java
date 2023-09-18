@@ -15,7 +15,7 @@ public class LionParameterizedTest {
         this.lion = new Lion(sex, new Feline());
     }
 
-    @Parameterized.Parameters
+    @Parameterized.Parameters (name = "Тестовые данные: {0} {1}")
     public static Object[][] listMale() {
         return new Object[][]{
                 {"Самец", true},

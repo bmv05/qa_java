@@ -18,7 +18,7 @@ public class AnimalParameterizedTest {
         this.animal = new Animal();
     }
 
-    @Parameterized.Parameters
+    @Parameterized.Parameters (name = "Тестовые данные: {0} {1}")
     public static Object[][] listAnimal() {
         return new Object[][]{
                 {"Травоядное", List.of("Трава", "Различные растения")},
